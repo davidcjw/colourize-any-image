@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Upload a photo or paste an image link and get a black-and-white line-art page, sized to print on A4.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fredoka.variable} ${nunito.variable} h-full`}>
       <body className="min-h-full flex flex-col">{children}</body>
